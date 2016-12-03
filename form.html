@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Form</title>
+</head>
+<body>
+    <a href="index.html">Go back</a>
+   <form method="POST" action="https://formspree.io/rostyslavpavliv@gmail.com">
+       <label for="name">Name</label>
+       <input type="text" name="Name" required>
+       <br>
+       <label for="email">Email</label>
+       <input type="text" name="email" required>
+       <br>
+       <label for="password">Passw</label>
+       <input type="password" name="password"/>
+       <br>
+       <label for="comment">Text</label>
+       <textarea for="comment" id="comment" placeholder="Type something"></textarea>
+        <hr>
+        <input type="radio" name="gender" value="male" checked> Male<br>
+        <input type="radio" name="gender" value="female"> Female<br>
+        <input type="radio" name="gender" value="other"> Other
+        <hr>
+        <label for="age">Age</label>
+        <input type="number" name="age" min="18" max="100" step="1" value="18">
+        <hr>
+        <label for="phone">Choose phone</label>
+        <select name="Phone">
+      <option value="Meizu">Meizu</option>
+      <option value="Xiaomi">Xiaomi</option>
+      <option value="Iphone">Iphone</option>
+      <option value="Pixel">Pixel</option>
+        </select>
+        <hr>
+        <input type="submit" value="OK">
+        <input type="reset">
+   </form>
+</body>
+</html>
